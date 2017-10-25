@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: iYrC2cw4+jm/+V7f+k5wPffEaVbxAfXS6dzazaXmC+y7CdRFTeX0kwKUPVgIYMq4mLf+5JOjpPEItGyprbQHxi1tWg92b+u9pFurBiA2HEhByIczYp+F3Lj8G3amTTAe9opnxdBQ2eqA1zONtjqJvRShcJihlpBBZGyWYJ9K/vqwXKkbn9QRg5/tDItImfZ1Noya9Zo2rtpkKkgSy0G+L2YLvqK3085mn+3T9CuU1W6wjz4SwR4lsSXzK7VaM/K468v9vUmJjCS5hT+ORy3uk1bXu0jgTRTAKH6kFY7LTLUST61oarnhvdKuD4glrMKPfu43cl+XNpbqMt2nipttRGPhIIjA5Q1jpXVyXSkI5ylv0taK44oAnjVx14UBzbEkY/BlMZnDkagG9N5MPNWZI03YHp8CgbsdQ6pmIaPoQ9TW0Y+iVUxtRsQOY4jYGeVn8sGgkzt3yMzPD1b2e/QKx5aPTFF1xiGG9eVEPNGsQ37uYL4zoC/LlnE3YInopVUHSa/nYENtILOJG0fmxcdvIh2+hhVE2IdFELhmNHyOhX6jpGpyRg+5hJS5WETOLjVajKuucFL7mkwOABWbkKXlRTggvlOPjaHv9aMQot+ZVXty1ea2o7g/AioXdqd2ZG7twKdvRgTjefnRNzrVRvtccGeZMgOoatYmr+TqCKgsE6o=
+  app: young-caverns-93110
+  on:
+    repo: kevinlnichols/node-restaurants-app-mongoose
+    branch: feature/with-tests
